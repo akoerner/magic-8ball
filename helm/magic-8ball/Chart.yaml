@@ -1,0 +1,7 @@
+apiVersion: v2
+name: magic-8ball 
+description: A magic 8 ball 
+type: application
+version: 0.1.0
+appVersion: "1.0"
+

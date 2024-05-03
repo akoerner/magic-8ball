@@ -1,9 +1,9 @@
 namespace: services
-fullnameOverride: "keno-picker"
+fullnameOverride: "magic-8ball"
 replicaCount: 3
 
 image:
-  repository: kroyio/keno
+  repository: kroyio/magic-8ball
   pullPolicy: Always
   tag: "latest"
 
@@ -16,16 +16,16 @@ ingress:
   enabled: true
   className: nginx
   hosts:
-    - host: "keno.kroy.io"
+    - host: "magic-8ball.kroy.io"
       paths:
         - path: /
           pathType: Prefix
           service:
-            name: keno-picker
+            name: magic-8ball
             port: 4200
   tls:
     - hosts:
-        - "keno.kroy.io"
+        - "magic-8ball.kroy.io"
       secretName: keno-kroy-io
       
 resources: {}
