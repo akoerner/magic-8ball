@@ -26,7 +26,7 @@ ingress:
   tls:
     - hosts:
         - "magic-8ball.kroy.io"
-      secretName: keno-kroy-io
+      secretName: magic-8ball-kroy-io
       
 resources: {}
 
